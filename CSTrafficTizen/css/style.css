@@ -1,8 +1,0 @@
-body {
-}
-
-.answer { display: block; }
-.ok { color: green; }
-.ko { color: red; }
-.homeMenu > a { max-width: 50%; float: left; box-sizing: border-box; padding: 0.5em; text-decoration: none; text-align: center}
-.homeMenu > a img { max-width: 100% }
