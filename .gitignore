@@ -1,3 +1,5 @@
 *.wgt
+*.zip
 .*
 !.gitignore
+/nbproject/*

@@ -1,8 +1,48 @@
-body {
-}
-
 .answer { display: block; }
 .ok { color: green; }
 .ko { color: red; }
-.homeMenu > a { max-width: 50%; float: left; box-sizing: border-box; padding: 0.5em; text-decoration: none; text-align: center}
-.homeMenu > a img { max-width: 100% }
+.homeMenu > a {
+	width: 50%; 
+	float: left; 
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 0.5em; 
+	text-decoration: none; 
+	text-align: center
+}
+.homeMenu > a img { width: 100% }
+.appName img {
+	float: left;
+	width: 50%;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+#splash {
+	background-image: url("../img/splash-screen.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+@media (min-aspect-ratio: 2/3) {
+	.appName h1, .appName h4 {
+		margin: 0;
+	}
+	.homeMenu > a {
+		padding-bottom: 0;
+		width: 42%;
+	}
+	.homeMenu > a:nth-child(even) {
+		float: right;
+	}
+	.appName img {
+		width: 42%;
+	}
+}
+@media (orientation: landscape) {
+	.homeMenu > a {
+		width: 25%;
+		float: left;
+	}
+	.appName img {
+		width: 25%;
+	}
+}
